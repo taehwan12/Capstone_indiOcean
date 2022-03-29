@@ -1,0 +1,118 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+footer{
+  padding: 3% 0 2%;
+    text-align: center;
+}
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+#title{
+  background-color: #87AAAA;
+  color: white;
+}
+
+/* Navigation Bar(상단 메뉴) */
+.navbar{
+  padding-bottom: 3.5rem;
+  /* background-color: #F6EABE; */
+}
+.navbar-brand{
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav-item{
+  padding: 0 15px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Raleway";
+}
+
+/* Carousel & Tiny Slider */
+*{
+  magrin: 0;
+}
+#slider{
+  padding: 5% 8% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 1600px;
+  margin: auto;
+}
+.subcontainer{
+  width: 85%;
+  margin: auto;
+}
+.controller{
+  display: flex;
+  justify-content: space-between;
+}
+#controls i{
+  color: black;
+  font-size: 1rem;
+}
+.previous, .next{
+  width: 30px;
+  cursor: pointer;
+  border-radius: 20%;
+  outline: none;
+  transition: 0.7s ease-in-out;
+  border: 2px solid;
+  background-color: white;
+  box-shadow: 0 0 5px #bbb;
+}
+.previous:hover, .next:hover{
+  border: 2px solid #87AAAA;
+}
+.slide{
+  width: 100%;
+  height: 300px;
+  border: 2px solid #87AAAA;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.slide-img:hover{
+  box-shadow: 0 0 0 200px, black, inset;
+}
+.slide-img a{
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.slide-img:hover a{
+  opacity: 1;
+  transform: scale(1);
+}
+.imgX{
+  background-image:url(images/imgX.jpeg);
+}
+@@media(max-width: 1600px){
+  .container{
+    width: 100%;
+  }
+}
+
+.container2{
+  padding: 5% 15%;
+}
