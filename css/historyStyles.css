@@ -1,0 +1,77 @@
+tml, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #eee;
+  margin-bottom: 50px;
+}
+
+footer {
+  padding: 3% 0 2%;
+  text-align: center;
+  color:black;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+#title {
+  background-color: #87AAAA;
+  color: white;
+}
+
+/* Navigation Bar(상단 메뉴) */
+.navbar {}
+
+.navbar-brand {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Raleway";
+}
+
+/* 목록 */
+.container {
+  margin: -2% auto;
+  padding: 2% 10.5%;
+  border-radius: 5px;
+}
+
+.hist-songs{
+  color: #eee;
+}
+
+.albumCover{
+
+  height:120px;
+}
+
+.w3-container{
+  margin-top: 2%;
+}
