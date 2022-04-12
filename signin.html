@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>🐳 Sign In</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <title>🐳 Sign In</title>
 
-    <!-- CSS sheet -->
-    <link rel="stylesheet" href="css/login.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="signup-box">
-      <h1>Sign In</h1>
-      <form class="form" action="index.html" method="post">
-        <label>Email</label>
-        <input type="email" name="" value="">
-        <label>Password</label>
-        <input type="password" name="" value="">
-        <!-- <a href="mainPage.html" class="btn btn-outline-light btn-lg signButton">Sign In!</a> -->
-        <input type="button" name="" value="Sign In!">
-      </form>
-    </div>
-    <p>Not have an account? <a href="signup.html">Sign up here</a></p>
-  </body>
+  <!-- CSS sheet -->
+  <link rel="stylesheet" href="css/login.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="signup-box">
+    <h1>Sign In</h1>
+    <form class="form" action="index.html" method="post">
+      <label>Email</label>
+      <input type="email" name="" value="">
+      <label>Password</label>
+      <input type="password" name="" value="">
+      <!-- <a href="mainPage.html" class="btn btn-outline-light btn-lg signButton">Sign In!</a> -->
+      <input type="button" name="" value="Sign In!">
+    </form>
+  </div>
+  <p>Not have an account? <a href="signup.html">Sign up here</a></p>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import {getDataBase} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBtxX9yy9wwNxz_bauidUEZJQiHvoyfwp4",
+      authDomain: "indiocean-login.firebaseapp.com",
+      projectId: "indiocean-login",
+      storageBucket: "indiocean-login.appspot.com",
+      messagingSenderId: "691886584876",
+      appId: "1:691886584876:web:1262b635d7dcff38654d89"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatBase(app);
+    const auth = getAuth();
+
+  </script>
+  <!-- <script src="js/login.js" charset="utf-8"></script> -->
+</body>
+
 </html>

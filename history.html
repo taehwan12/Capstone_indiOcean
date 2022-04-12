@@ -9,13 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <!-- CSS 목록 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <!--Font Awesome CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-  <!--TINY SLIDER-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/historyStyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -36,59 +37,86 @@
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">indiOcean</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mainPage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="playlists.html">Playlist</a>
+          </li>
+        </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign in</a>
+              <a class="nav-link" href="profile.html">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="signup.html">Create account</a>
+              <a class="nav-link" href="index.html">Logout</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- Title -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Surf in to hear a whole new music you've never experienced.</h1>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="container" style="background-color: #1B2631">
+      <h2>Played History</h2>
+      <div class="w3-content">
+
+        <div class="w3-row w3-margin">
+          <div class="w3-third">
+            <img class="albumCover" src="images/dice6.png">
+          </div>
+          <div class="w3-twothird w3-container">
+            <h4>Title 1</h4>
+            <h5>Artist Name</h5>
+          </div>
         </div>
-        <div class="col-lg-6" style="padding: 9%">
-          <a href="#top-songs" class="btn btn-outline-light btn-lg" style="margin-left: 30%"><i class="fa-solid fa-circle-play"></i> Surf in!</a>
-          <!-- <button type="button" class="btn btn-outline-light btn-lg" style="margin-left: 30%" href="#explanation"><i class="fa-solid fa-circle-play"></i> Surf in!</button> -->
+        <div class="w3-row w3-margin">
+          <div class="w3-third">
+            <img class="albumCover" src="images/dice3.png">
+          </div>
+          <div class="w3-twothird w3-container">
+            <h4>Title 2</h4>
+            <h5>Artist Name</h5>
+          </div>
         </div>
+        <div class="w3-row w3-margin">
+          <div class="w3-third">
+            <img class="albumCover" src="images/dice2.png">
+          </div>
+          <div class="w3-twothird w3-container">
+            <h4>Title 3</h4>
+            <h5>Artist Name</h5>
+          </div>
+        </div>
+        <div class="w3-row w3-margin">
+          <div class="w3-third">
+            <img class="albumCover" src="images/dice5.png">
+          </div>
+          <div class="w3-twothird w3-container">
+            <h4>Title 4</h4>
+            <h5>Artist Name</h5>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="top-songs">
-    <div class="container">
-      <h2>Top 5 Songs</h2>
-      <button class="one button">Title 1</button>
-      <button class="two button">Title 2</button>
-      <button class="three button">Title 3</button>
-      <button class="four button">Title 4</button>
-      <button class="five button">Title 5</button>
-    </div>
-  </section>
-
-  <section id="explanation">
-    <div class="container">
-      <h2>How to use</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus eros erat, ac vulputate sapien imperdiet non. Etiam dapibus imperdiet tellus quis egestas. Sed ut aliquam massa. Ut tempor tortor odio, in sollicitudin purus euismod
-        at. Phasellus non lobortis nibh, ut viverra dolor. Phasellus luctus quam a sodales tempus. Nullam placerat rhoncus est, sed pretium dui pharetra eget.</p>
-
-    </div>
-    </div>
-  </section>
   <!-- Footer -->
   <footer id="footer">
     <p>© Copyright IndiOcean</p>
   </footer>
-  <script src="script.js" charset="utf-8"></script>
+
 </body>
 
 </html>
