@@ -20,41 +20,17 @@
 <body>
   <div class="signup-box">
     <h1>Sign In</h1>
-    <form class="form" action="index.html" method="post">
+    <form class="form" action="/" method="post">
       <label>Email</label>
-      <input type="email" name="" value="">
+      <input type="email" name="email" value="">
       <label>Password</label>
-      <input type="password" name="" value="">
+      <input type="password" name="password" value="">
       <!-- <a href="mainPage.html" class="btn btn-outline-light btn-lg signButton">Sign In!</a> -->
-      <input type="button" name="" value="Sign In!">
+      <input type="submit" name="" value="Sign In!">
     </form>
   </div>
   <p>Not have an account? <a href="signup.html">Sign up here</a></p>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-    import {getDataBase} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyBtxX9yy9wwNxz_bauidUEZJQiHvoyfwp4",
-      authDomain: "indiocean-login.firebaseapp.com",
-      projectId: "indiocean-login",
-      storageBucket: "indiocean-login.appspot.com",
-      messagingSenderId: "691886584876",
-      appId: "1:691886584876:web:1262b635d7dcff38654d89"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const database = getDatBase(app);
-    const auth = getAuth();
-
-  </script>
-  <!-- <script src="js/login.js" charset="utf-8"></script> -->
+  
 </body>
 
 </html>
